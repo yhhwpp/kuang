@@ -1,0 +1,22 @@
+
+
+.border--one{position: relative;box-sizing: border-box}
+.border--one::after{content: '';position: absolute;left: 0;bottom: 0;transform-origin: 0 0;transform: scaleY(0.5);box-sizing: border-box;border: 1px solid #e3e3e3;width: 100%}
+
+
+
+
+
+.bar .icon{font-size: 0.9rem;}
+.bar .button-link{color: #111111}
+.search-input input{border-radius: 2rem}
+.bar{background: #fff;height: 11.7333vw;padding: 0 4vw; }
+.bar .searchbar{background: none; height: 11.7333vw; box-sizing: border-box;padding: 1.2vw .5rem}
+.bar .searchbar .search-input input{background: #f1f1f1}
+.bar .button.pull-left{margin-right: 0;}
+.bar .searchbar{padding-right: 0}
+.searchbar .search-input input{height:9.0667vw}
+.nav{position: fixed; width: 100vw; left: 0; top: 17.0667vw;}
+
+
+
