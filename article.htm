@@ -26,21 +26,42 @@
         </a>
         <div class="searchbar">
           <div class="search-input">
-            <label class="icon icon-search" for="search"></label>
+            
             <input type="search" id='search' placeholder='输入关键字...' />
+            <label class="icon icon-search" for="search"></label>
           </div>
         </div>
 
         <div class="nav">
+          <div class="sort--bg"></div>
+          <div class="sort">
+            <div class="sort__title">全部分类<span class="close"></span></div>
+            <div class="sort__list">
+              <a href="" class="sort__item--active border__one">全部</a>
+              <a href="" class="border__one">股票</a>
+              <a href="" class="border__one">基金</a>
+              <a href="" class="border__one">保险</a>
+              <a href="" class="border__one">电影</a>
+              <a href="" class="border__one">汽车</a>
+              <a href="" class="border__one">收藏</a>
+              <a href="" class="border__one">理财有道</a>
+              <a href="" class="border__one">轻松一刻</a>
+              <a href="" class="border__one">健康养生</a>
+              <a href="" class="border__one">教育</a>
+              <a href="" class="border__one">体育</a>
+              <a href="" class="border__one">文化</a>
+            </div>
+          </div>
           <div class="nav__txt">
               <a href="" class="active">全部</a>
               <a href="">财经</a>
               <a href="">股票</a>
               <a href="">基金</a>
               <a href="">电影</a>
-              <a href="">电影</a>
           </div>
-          <div class="nav__icon"></div>
+          <div class="nav__icon">
+            <span class="nav__sort"></span>
+          </div>
         </div>
 
       </header>
@@ -84,6 +105,17 @@
   <script type='text/javascript' src='js/sm-extend.min.js' charset='utf-8'></script>
   <script>
     $.init();
+    $(function () {
+      $('.nav__icon').on('click', function() {
+        $('.nav').addClass('sortshow')
+      })
+
+      $('.close').on('click', function() {
+        $('.nav').removeClass('sortshow')
+      })
+
+      
+    })
   </script>
 </body>
 
